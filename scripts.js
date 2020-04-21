@@ -47,10 +47,12 @@ function gameStart(){
         reset();
         num = prompt('How many pixels per side?', 6);
         gridCreate(num);
+        hoverChange();
     });
 
     resetButton.addEventListener('click', (e)=>{
         resetColor();
+        hoverChange();
     })
 
     
