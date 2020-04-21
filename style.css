@@ -1,0 +1,51 @@
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "canvas" "buttons";
+    place-content: center;
+}
+
+#sketchContainer{
+    grid-area: canvas;
+    height: 40vw;
+    width: 40vw;
+    justify-self: center;
+    border: 4 px solid black;
+   
+}
+
+#controlContainer{
+    grid-area: buttons;
+    justify-self: center;
+}
+
+#header{
+    grid-area: header;
+    justify-self: center;
+}
+
+#controlContainer button {
+    background: transparent;
+    border: 2 px solid black;
+    font-size: 1.5vw;
+}
+
+#controlContainer button:hover{
+    background: lightgrey;
+}
+
+#controlCOntainer select:hover{
+    background: lightgrey;
+}
+
+
+#controlContainer select {
+    background: transparent;
+    border: 2 px solid black;
+    font-size: 1.5vw;
+}
+
+
+
